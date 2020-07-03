@@ -8,7 +8,7 @@ const fs = require("fs");
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
-const render = require("./lib/htmlRenderer.js");
+const render = require("./lib/htmlRenderer");
 
 const employees = [];
 
@@ -102,7 +102,7 @@ function moreEmployees() {
             newIntern();
         }
         if(answers.newEmployee == "I don't want to add any more team members.") {
-            fs.writeFile("outputPath", render(employees), function (err) {
+            fs.writeFile(outputPath, render(employees), function (err) {
                 if (err) throw err;
                 console.log("Success! You have generated your employee templates!")
             })

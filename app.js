@@ -10,26 +10,120 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
+const employees = [];
 
-// Write code to use inquirer to gather information about the development team members,
-// and to create objects for each team member (using the correct classes as blueprints!)
+inquirer.prompt([
+    {   type: "input",
+        name: "name",
+        message: "What is your manager's name?"
+    },
+    {
+        type: "input",
+        name: "id",
+        message: "What is your manager's ID?"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is your manager's email address?",
+    },
+    {
+        type: "input",
+        name: "officeNumber",
+        message: "What is your manager's office number?",
+    }
+]).then(function(answers) {
+    let newManager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber)
+    employees.push(newManager);
+    moreEmployees();
+});
 
-// After the user has input all employees desired, call the `render` function (required
-// above) and pass in an array containing all employee objects; the `render` function will
-// generate and return a block of HTML including templated divs for each employee!
+const newEmployee = {
+        type: "list",
+        name: "newEmployee",
+        message: "Which type of team member would you like to add?",
+        choices: [
+        "Engineer",
+        "Intern",
+        "I don't want to add any more team members."
+        ]
+};
 
-// After you have your html, you're now ready to create an HTML file using the HTML
-// returned from the `render` function. Now write it to a file named `team.html` in the
-// `output` folder. You can use the variable `outputPath` above target this location.
-// Hint: you may need to check if the `output` folder exists and create it if it
-// does not.
+const makeEngineer = [
+    {   type: "input",
+        name: "name",
+        message: "What is your engineer's name?"
+    },
+    {
+        type: "input",
+        name: "id",
+        message: "What is your engineer's ID?"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is your engineer's email address?",
+    },
+    {
+        type: "input",
+        name: "Github",
+        message: "What is your engineer's Github profile name?",
+    }
+];
 
-// HINT: each employee type (manager, engineer, or intern) has slightly different
-// information; write your code to ask different questions via inquirer depending on
-// employee type.
+const makeIntern = [
+    {   type: "input",
+        name: "name",
+        message: "What is your intern's name?"
+    },
+    {
+        type: "input",
+        name: "id",
+        message: "What is your intern's ID?"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is your intern's email address?",
+    },
+    {
+        type: "input",
+        name: "school",
+        message: "What school does your intern attend?",
+    }
+];
 
-// HINT: make sure to build out your classes first! Remember that your Manager, Engineer,
-// and Intern classes should all extend from a class named Employee; see the directions
-// for further information. Be sure to test out each class and verify it generates an
-// object with the correct structure and methods. This structure will be crucial in order
-// for the provided `render` function to work! ```
+function moreEmployees() {
+    inquirer.prompt(newEmployee).then(function(answers) {
+        if(answers.newEmployee == "Engineer") {
+            newEngineer();
+        }
+        if(answers.newEmployee == "Intern") {
+            newIntern();
+        }
+        if(answers.newEmployee == "I don't want to add any more team members.") {
+            fs.writeFile("outputPath", "render(employees)", function (err) {
+                if (err) throw err;
+                console.log("Success! You have generated your employee templates!")
+            })
+        }
+})};
+
+function newEngineer() {
+    inquirer.prompt(makeEngineer).then(function(answers) {
+    let newEngineer = new Engineer(answers.name, answers.id, answers.email, answers.Github)
+    employees.push(newEngineer);
+    moreEmployees();
+}
+)};
+
+function newIntern() {
+    inquirer.prompt(makeIntern).then(function(answers) {
+    let newEngineer = new Engineer(answers.name, answers.id, answers.email, answers.school)
+    employees.push(newIntern);
+    moreEmployees();
+}
+)};
+
+
+moreEmployees();

@@ -49,19 +49,11 @@ The application requires the following dependencies and/or package managers:
 npm install inquirer
 ~~~
 
-~~~
-npm install --save-dev jest
-~~~
-
 ## Usage
 
 An example of usage when running the provided tests to help build the necessary classes:
 ~~~
 npm run test
-~~~
-
-~~~
-
 ~~~
 
 ## License

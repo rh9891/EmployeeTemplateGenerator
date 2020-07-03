@@ -16,6 +16,10 @@
 
 ## Description
 
+The client requests the creation of a command line application that is capable of generating employee templates - that also includes basic contact information for each member of the team - based on a user's input. The node command line interface would also render the inputted information onto a new HTML page that one can easily access.
+
+When launched, the application prompts the user for information about the team manager and then information about the individual team members. The user can input any number of team members - a mixture of engineers and interns - to fit their needs. Summaries for each employee is rendered onto the HTML page. In conjunction with creating the node application, multiple tests were run (using the jest dependency) to ensure that the code was maintainable.
+
 ## User Story
 ~~~
 AS A manager   
@@ -34,9 +38,15 @@ THEN a file is rendered with each team member's basic information, such as their
 
 The following animation demonstrates the application functionality:
 
-![Employee Template Generator]()
+![Employee Template Generator](https://github.com/rh9891/EmployeeTemplateGenerator/blob/master/assets/images/Employee%20Template%20Generator.gif)
 
-The following images demonstrate the application functionality and provide a closer look at the test cases.:
+The following image demonstrates the application functionality and provide a closer look at the user output being generated:
+
+![Output Preview](assets/images/outputPreview.jpg)
+
+The following image shows the user input from the node application being pushed into the ``team.html`` file:
+
+![Team HTML Preview](assets/images/teamHTMLPreview.jpg)
 
 ## Links
 
@@ -50,6 +60,11 @@ npm install inquirer
 ~~~
 
 ## Usage
+
+An example of usage when first launching the application to access the application from the command line:
+~~~
+node app.js
+~~~
 
 An example of usage when running the provided tests to help build the necessary classes:
 ~~~

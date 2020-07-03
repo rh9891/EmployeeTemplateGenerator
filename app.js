@@ -119,7 +119,7 @@ function newEngineer() {
 
 function newIntern() {
     inquirer.prompt(makeIntern).then(function(answers) {
-    let newEngineer = new Engineer(answers.name, answers.id, answers.email, answers.school)
+    let newIntern = new Intern(answers.name, answers.id, answers.email, answers.school)
     employees.push(newIntern);
     moreEmployees();
 }

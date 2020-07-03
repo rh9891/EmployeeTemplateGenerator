@@ -36,6 +36,10 @@ THEN a file is rendered with each team member's basic information, such as their
 
 ## Preview of Employee Template Generator
 
+The command line application renders an HTML page with summaries for each employee:
+
+![My Team Preview](assets/images/myTeamPreview.png)
+
 The following animation demonstrates the application functionality:
 
 ![Employee Template Generator](https://github.com/rh9891/EmployeeTemplateGenerator/blob/master/assets/images/Employee%20Template%20Generator.gif)

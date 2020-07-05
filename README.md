@@ -84,7 +84,7 @@ The user is not permitted to use, modify, or share any parts of it. Though the c
 
 ## Tests
 
-The tests for this application were run (with [Jest](jesthttps://jestjs.io/docs/en/getting-started)) using the command:
+The tests for this application were run with [Jest](jesthttps://jestjs.io/docs/en/getting-started) using the command:
 
 ~~~
 npm run test

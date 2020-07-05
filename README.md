@@ -11,6 +11,7 @@
 *  [Installation](#installation)
 *  [Usage](#usage)
 *  [License](#license)
+*  [Tests](#tests)
 *  [Contributing](#contributing)
 *  [Questions](#questions)
 
@@ -80,6 +81,28 @@ npm run test
 This application does not currently have any licenses.
 
 The user is not permitted to use, modify, or share any parts of it. Though the code for this application is hosted on Github, where you are allowed to view and fork the code, this does not imply that the user is permitted to use, modify, or share the contents of this application for any purpose.
+
+## Tests
+
+The tests for this application were run (with [Jest](jesthttps://jestjs.io/docs/en/getting-started)) using the command:
+
+~~~
+npm run test
+~~~
+
+### Breakdown and Examples of Tests 
+
+The tests for this application looked at the constructors of the application (employee, manager, engineer, and intern) and verified that certain arguments and methods were coded correctly to get an expected result.
+
+The following images demonstrate the failed tests of the application and where the failures occurred in the program:
+
+![Failed Employee Test Preview](assets/images/failedEmployeeTest.png)
+
+![Failed Engineer and Manager Test Preview](assets/images/failedEngineerManagerTest.png)
+
+The following image demonstrates the application passing the tests for all four constructors:
+
+![Passed Tests Preview](assets/images/passedTestsPreview.png)
 
 ## Contributing
 

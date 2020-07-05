@@ -71,11 +71,6 @@ An example of usage when first launching the application to access the applicati
 node app.js
 ~~~
 
-An example of usage when running the provided tests to help build the necessary classes:
-~~~
-npm run test
-~~~
-
 ## License
 
 This application does not currently have any licenses.
@@ -84,8 +79,7 @@ The user is not permitted to use, modify, or share any parts of it. Though the c
 
 ## Tests
 
-The tests for this application were run (with [Jest](https://jestjs.io/docs/en/getting-started)) using the command:
-
+The tests for this application - which helped to build the necessary classes - were run (with [Jest](https://jestjs.io/docs/en/getting-started)) using the command:
 ~~~
 npm run test
 ~~~

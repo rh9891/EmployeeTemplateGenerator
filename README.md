@@ -43,7 +43,9 @@ The command line application renders an HTML page with summaries for each employ
 
 The following animation demonstrates the application functionality:
 
-![Employee Template Generator](https://github.com/rh9891/EmployeeTemplateGenerator/blob/master/assets/images/Employee%20Template%20Generator.gif)
+<p align="center">
+  <img src="https://github.com/rh9891/EmployeeTemplateGenerator/blob/master/assets/images/Employee%20Template%20Generator.gif">
+</p>
 
 The following image demonstrates the application functionality and provide a closer look at the user output being generated:
 

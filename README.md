@@ -6,7 +6,7 @@
 *  [Description](#description)
 *  [User Story](#user-story)
 *  [Features of the Application](#features-of-the-application)
-*  [Preview of Employee Template Generator](#preview-of-employee-template-generator)
+*  [Preview of the Employee Template Generator](#preview-of-the-employee-template-generator)
 *  [Links](#links)
 *  [Installation](#installation)
 *  [Usage](#usage)
@@ -17,7 +17,7 @@
 
 ## Description
 
-The client requests the creation of a command line application that is capable of generating employee templates - that also includes basic contact information for each member of the team - based on a user's input. The node command line interface would also render the inputted information onto a new HTML page that one can easily access.
+The Employee Template Generator is a command line application that is capable of generating employee templates - that also includes basic contact information for each member of the team - based on a user's input. The application also renders the inputted information onto a new HTML page that one can easily access.
 
 When launched, the application prompts the user for information about the team manager and then information about the individual team members. The user can input any number of team members - a mixture of engineers and interns - to fit their needs. Summaries for each employee is rendered onto the HTML page. In conjunction with creating the node application, multiple tests were run (using the jest dependency) to ensure that the code was maintainable.
 
@@ -35,7 +35,7 @@ WHEN I am prompted for basic information about my team members
 THEN a file is rendered with each team member's basic information, such as their name, role, school information, Github username, and office number.
 ~~~
 
-## Preview of Employee Template Generator
+## Preview of the Employee Template Generator
 
 The command line application renders an HTML page with summaries for each employee:
 

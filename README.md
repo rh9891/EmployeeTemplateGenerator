@@ -94,9 +94,9 @@ The following images demonstrate the failed tests of the application and where t
 
 ![Failed Engineer and Manager Test Preview](assets/images/failedEngineerManagerTest.png)
 
-The following image demonstrates the application passing the tests for all four constructors:
+The following animation demonstrates the application passing the tests for all four constructors:
 
-![Passed Tests Preview](assets/images/passedTestsPreview.png)
+![Passed Tests Preview](assets/images/passedTestsPreview.gif)
 
 ## Contributing
 
@@ -104,4 +104,4 @@ If you would like to contribute to this repository, please contact me via [Githu
 
 ## Questions
 
-If you have any questions, comments, or issues regarding this command line interface application, please do not hesitate to contact me through [Github](https://github.com/rh9891).
+If you have any questions, comments, or issues regarding this command line interface application, please do not hesitate to contact me via [Github](https://github.com/rh9891).

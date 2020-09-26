@@ -49,13 +49,13 @@ The following image demonstrates the application functionality and provide a clo
 
 ![Output Preview](assets/images/outputPreview.jpg)
 
-The following image shows the user input from the node application being pushed into the ``team.html`` file:
+The following image shows the user input from the node application being pushed into the `team.html` file:
 
 ![Team HTML Preview](assets/images/teamHTMLPreview.jpg)
 
 ## Links
 
-[Github Repository](https://github.com/rh9891/EmployeeTemplateGenerator)
+* [Github Repository](https://github.com/rh9891/EmployeeTemplateGenerator)
 
 ## Installation
 
